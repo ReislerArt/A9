@@ -7,7 +7,6 @@ public class Q3 {
     public static void main(String[] args) {
         System.out.printf("%5s%10s%10s%10s\n", "N", "Bubble", "Selection", "Insertion");
 
-//        int x = 1;
         for (int x = 5; x <= 50; x += 5) {
         ArrayList<Patient> list1 = createRandomList(x * 1000);
         ArrayList<Patient> list2 = (ArrayList<Patient>) list1.clone();
