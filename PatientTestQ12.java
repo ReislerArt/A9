@@ -14,7 +14,7 @@ public class PatientTestQ12 {
 		//before sorting
 		System.out.printf("%-15s%25s\n", "Before sorting", list);	//should be [p1, p2, p3, p4, p5]
 		
-		//try bubble sort methods 	for Q1
+		//try bubble sort methods 	for Sorter
 		//Sorter.bubbleSort(list);
 		//Sorter.bubbleSort(list, new PatientComparator());
 
