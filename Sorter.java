@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Sorter {
+    //Q1
     public static void bubbleSort(ArrayList<Patient> list) {
         boolean swapped;
         int tempNum;
@@ -39,8 +40,19 @@ public class Sorter {
         } while (swapped);
     }
 
+    //Q2
     public static void selectionSort(ArrayList<Patient> list) {
-
+        for (int x = 0; x < list.size(); x++) {
+            int lowest = x;
+            for (int y = x; y < list.size(); y++) {
+                if (list.get(lowest).compareTo(list.get(y)) > 0)
+                    lowest = y;
+            }
+            //swap
+            Patient temp = list.get(x);
+            list.set(x, list.get(lowest));
+            list.set(lowest, temp);
+        }
     }
 
     public static void insertionSort(ArrayList<Patient> list) {
