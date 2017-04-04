@@ -19,8 +19,8 @@ public class PatientTestQ12 {
 //		Sorter.bubbleSort(list, new PatientComparator());
 
 		//other sort methods		for Q2
-		//Sorter.selectionSort(list);
-		Sorter.insertionSort(list);
+//		Sorter.selectionSort(list);
+//		Sorter.insertionSort(list);
 
 		//after sorting
 		System.out.printf("%-15s%25s\n", "After sorting", list);	//should be [p3, p5, p1, p2, p4]
